@@ -10,12 +10,8 @@ from sklearn.model_selection import GridSearchCV, train_test_split
 
 # Setup
 areas = [
-    # "DE",
-    # "GB",
     "Nordic",
     "CE",
-    # "SE",
-    # "CH",
 ]
 data_version = "2024-05-19"
 targets = ["f_integral", "f_ext", "f_msd", "f_rocof"]
