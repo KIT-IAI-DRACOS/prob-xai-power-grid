@@ -1,4 +1,4 @@
-# Probabilistic and Explainable Machine Learning for Tabular Power Grid Data
+# git remote add origin git@github.com:KIT-IAI-DRACOS/prob-xai-power-grid.git
 
 This repository contains the code for the paper "Probabilistic and Explainable Machine Learning for Tabular Power Grid Data".
 
@@ -35,9 +35,24 @@ This project uses `uv` for dependency management and was written in `python3.11`
 
 The `scripts` folder contains scripts to create the paper results and `notebooks` contains a notebook to reproduce the paper figures and evaluate the results. The `utils` folder comprises scripts for TabNetProba as well as plotting modules.
 
-The `scripts` contains 4 scripts for model training and 4 scripts for obtaining explanations:
-The `model_fit_$.py` scripts contain code for fitting the model  and optimize hyper-parameters.
-The `explain_$_partition.py` scripts contain code for obtaining explanations.
+The `scripts` directory contains:
+    * `model_fit_*.py` - Scripts for fitting models and optimizing hyperparameters
+    * `explain_*_partition.py` - Scripts for obtaining explanations for each model.
+
+Example usage:
+```bash
+uv run scripts/model_fit_model1.py  # Train model 1
+uv run scripts/explain_model1_partition.py  # Generate explanations for model 1
+```
+
+The `notebooks` directory contains:
+    * `clustering.ipynb` - Clustering analysis methods and results
+    * `data_overview.ipynb` - Overview and exploration of the dataset
+    * `eval_probabilistic.ipynb` - Probabilistic evaluation methodology
+    * `model_performance.ipynb` - Performance analysis of trained models
+    * `model_runtimes.ipynb` - Runtime benchmarks for different models
+    * `plots_for_paper.ipynb` - Visualization code for publication figures
+    * `standardize_data.ipynb` - Data standardization procedures
 
 
 ## Input data and results
