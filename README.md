@@ -1,4 +1,4 @@
-# git remote add origin git@github.com:KIT-IAI-DRACOS/prob-xai-power-grid.git
+# Probabilistic and Explainable Machine Learning for Tabular Power Grid Data
 
 This repository contains the code for the paper "Probabilistic and Explainable Machine Learning for Tabular Power Grid Data".
 
