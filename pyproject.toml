@@ -1,0 +1,31 @@
+[project]
+name = "prob-xai-power-grid"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "category_encoders==2.6.3",
+    "joblib==1.4.2",
+    "matplotlib==3.9.2",
+    "ngboost==0.5.1",
+    "numpy==1.26.4",
+    "optuna==3.6.1",
+    "pandas==2.2.2",
+    "plotly==5.22.0",
+    "properscoring==0.1",
+    "pytorch_tabnet==4.1.0",
+    "pytorch_tabular==1.1.0",
+    "qhoptim==1.1.0",
+    "scikit_learn==1.5.1",
+    "scipy",
+    "seaborn==0.13.2",
+    "shap==0.45.1",
+    "tqdm==4.66.4",
+    "typer==0.12.3",
+    "wandb==0.17.7",
+    "xgboost>=1.4.2",
+    "yacs==0.1.8",
+    "tables",
+    "torch",
+]
