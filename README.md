@@ -35,9 +35,16 @@ This project uses `uv` for dependency management and was written in `python3.11`
 
 The `scripts` folder contains scripts to create the paper results and `notebooks` contains a notebook to reproduce the paper figures and evaluate the results. The `utils` folder comprises scripts for TabNetProba as well as plotting modules.
 
-The `scripts` directory contains:
-    * `model_fit_*.py` - Scripts for fitting models and optimizing hyperparameters
-    * `explain_*_partition.py` - Scripts for obtaining explanations for each model.
+The `scripts` folder contain a pipeline of six different stages:
+
+* `1_download_data.sh`: A bash script to download the external features from the ENTSO-E Transparency Platform. 
+* `2_stability_indicator_prep.py`: Create HDF files from grid frequency CSV file and then extract frequency stability indicators.
+* `3_entsoe_data_prep.py`: Collect and aggregate external features within each synchronous area.
+* `4_external_feature_prep.py`: Add additional engineered features to the set of external features.
+* `5_train_test_split.py`: Split data set into train and test set and save data in a version folder.
+* `model_fit_*.py` - Scripts for fitting models and optimizing hyperparameters
+* `explain_*_partition.py` - Scripts for obtaining explanations for each model.
+ 
 
 Example usage:
 ```bash
@@ -56,5 +63,9 @@ The `notebooks` directory contains:
 
 
 ## Input data and results
+
+* **External features, frequency stability indicators and results of hyper-parameter optimization and model interpretation**: The output of scripts 2 to 5 and the model fit and explanation scripts is assumed to reside in the repository directory within `./data/` and the results should reside in `./results/`. In particular, the data of external features and stability indicators can be used to re-run the model fit. 
+* **Raw grid frequency data**: We have used pre-processed [grid frequency data](https://zenodo.com) as an input to 2_stability_indicator_prep.py. The CSV files from the repository are assumed to reside in `../Frequency_data_base/` relative to this code repository. The frequency data is originally based on publicly available measurements from the [German TSOs](https://www.netztransparenz.de/de-de/Regelenergie/Daten-Regelreserve/Sek%C3%BCndliche-Daten).
+* **Raw ENTSO-E data**: The output of `1_download_data.sh` can be downloaded from the [ENTSO-E Transparency Platform](transparency.entsoe.eu/) via the bash script. The ENTSO-E data is assumed to reside in `../../External_data/ENTSO-E` relative to this code repository.
 
 
