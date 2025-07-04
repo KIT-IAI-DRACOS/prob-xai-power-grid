@@ -54,12 +54,12 @@ uv run scripts/explain_model1_partition.py  # Generate explanations for model 1
 
 The `notebooks` directory contains:
 * `clustering.ipynb` - Clustering analysis methods and results
-* * `data_overview.ipynb` - Overview and exploration of the dataset
+* `data_overview.ipynb` - Overview and exploration of the dataset
 * `eval_probabilistic.ipynb` - Probabilistic evaluation methodology
 * `model_performance.ipynb` - Performance analysis of trained models
 * `model_runtimes.ipynb` - Runtime benchmarks for different models
 * `plots_for_paper.ipynb` - Visualization code for publication figures
-* * `standardize_data.ipynb` - Data standardization procedures
+* `standardize_data.ipynb` - Data standardization procedures
 
 
 ## Input data and results
