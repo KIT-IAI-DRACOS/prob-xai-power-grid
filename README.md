@@ -53,19 +53,19 @@ uv run scripts/explain_model1_partition.py  # Generate explanations for model 1
 ```
 
 The `notebooks` directory contains:
-    * `clustering.ipynb` - Clustering analysis methods and results
-    * `data_overview.ipynb` - Overview and exploration of the dataset
-    * `eval_probabilistic.ipynb` - Probabilistic evaluation methodology
-    * `model_performance.ipynb` - Performance analysis of trained models
-    * `model_runtimes.ipynb` - Runtime benchmarks for different models
-    * `plots_for_paper.ipynb` - Visualization code for publication figures
-    * `standardize_data.ipynb` - Data standardization procedures
+* `clustering.ipynb` - Clustering analysis methods and results
+* * `data_overview.ipynb` - Overview and exploration of the dataset
+* `eval_probabilistic.ipynb` - Probabilistic evaluation methodology
+* `model_performance.ipynb` - Performance analysis of trained models
+* `model_runtimes.ipynb` - Runtime benchmarks for different models
+* `plots_for_paper.ipynb` - Visualization code for publication figures
+* * `standardize_data.ipynb` - Data standardization procedures
 
 
 ## Input data and results
 
 * **External features, frequency stability indicators and results of hyper-parameter optimization and model interpretation**: The output of scripts 2 to 5 and the model fit and explanation scripts is assumed to reside in the repository directory within `./data/` and the results should reside in `./results/`. In particular, the data of external features and stability indicators can be used to re-run the model fit. 
-* **Raw grid frequency data**: We have used pre-processed [grid frequency data](https://zenodo.com) as an input to 2_stability_indicator_prep.py. The CSV files from the repository are assumed to reside in `../Frequency_data_base/` relative to this code repository. The frequency data is originally based on publicly available measurements from the [German TSOs](https://www.netztransparenz.de/de-de/Regelenergie/Daten-Regelreserve/Sek%C3%BCndliche-Daten).
+* **Raw grid frequency data**: We have used pre-processed [grid frequency data](https://doi.org/10.5281/zenodo.15784548) as an input to 2_stability_indicator_prep.py. The CSV files from the repository are assumed to reside in `../Frequency_data_base/` relative to this code repository. The frequency data is originally based on publicly available measurements from the [German TSOs](https://www.netztransparenz.de/de-de/Regelenergie/Daten-Regelreserve/Sek%C3%BCndliche-Daten).
 * **Raw ENTSO-E data**: The output of `1_download_data.sh` can be downloaded from the [ENTSO-E Transparency Platform](transparency.entsoe.eu/) via the bash script. The ENTSO-E data is assumed to reside in `../../External_data/ENTSO-E` relative to this code repository.
 
 
