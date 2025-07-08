@@ -1,6 +1,6 @@
 # Probabilistic and Explainable Machine Learning for Tabular Power Grid Data
 
-This repository contains the code for the paper "Probabilistic and Explainable Machine Learning for Tabular Power Grid Data".
+This repository contains the code for the paper ["Probabilistic and Explainable Machine Learning for Tabular Power Grid Data"](https://dl.acm.org/doi/10.1145/3679240.3734623).
 
 ## Installation
 
